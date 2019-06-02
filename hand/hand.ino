@@ -29,11 +29,29 @@ void setup() {
 
 void loop() {
 
-  randNum = random(0,2);
-  Serial.print(randNum);
+  
+  
 
  
 
+}
+
+void numbergen() {
+  randNum = random(0,2);
+  Serial.print(randNum);
+
+  //After Number Generation execute select void
+  if(randNum = 0 ){ 
+    rock();
+  }
+
+  if(randNum = 1 ){ 
+    paper();
+  }
+
+  if(randNum = 2){  
+    Sisscors();
+  }
 }
 
 void rock() {
