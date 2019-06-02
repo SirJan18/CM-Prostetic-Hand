@@ -45,3 +45,25 @@ void rock() {
   finger5.write(90);
 
 }
+
+void paper() {
+  finger1.write(45);
+  finger2.write(45);
+  finger3.write(45);
+  finger4.write(45);
+  finger5.write(45);
+//Bend and rest to show action
+  finger1.write(0);
+  finger2.write(0);
+  finger3.write(0);
+  finger4.write(0);
+  finger5.write(0);
+  
+}
+
+void Sisscors() {
+
+  finger3.write(90);
+  finger4.write(90);
+  finger5.write(90);
+}
