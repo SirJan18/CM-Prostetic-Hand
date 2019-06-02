@@ -35,3 +35,13 @@ void loop() {
  
 
 }
+
+void rock() {
+
+  finger1.write(90);
+  finger2.write(90);
+  finger3.write(90);
+  finger4.write(90);
+  finger5.write(90);
+
+}
