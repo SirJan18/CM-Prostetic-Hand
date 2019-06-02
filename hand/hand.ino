@@ -2,16 +2,14 @@
 #include <IRremote.h>
 
 
-
+IRrecv irrecv(8);
+decode_results results;
 Servo finger1;
 Servo finger2;
 Servo finger3;
 Servo finger4;
 Servo finger5;
-//IRremote reciever = 6; //IR Reciever Signal Connection
-//IRrecv irrecv(reciever);
-//decode_results results;
-long randNum;
+
 
 
 
@@ -24,19 +22,26 @@ void setup() {
   finger3.attach(11);
   finger4.attach(12);  
   finger5.attach(13);
-  //irrecv.enableIRIn(); //Start IR Reciever
+
+  //Start IR Reciever
+  irrecv.enableIRIn(); 
 }
 
 void loop() {
 
-  
+//If button 1 is pressed then exeute the Rock Paper Sisscors Commands.
+if(results = ) {
+  rps();  
+}
+
+
   
 
  
 
 }
 
-void numbergen() {
+void rps() {
   randNum = random(0,2);
   Serial.print(randNum);
 
@@ -61,6 +66,7 @@ void rock() {
   finger3.write(90);
   finger4.write(90);
   finger5.write(90);
+  irrecv.resume();
 
 }
 
@@ -76,6 +82,7 @@ void paper() {
   finger3.write(0);
   finger4.write(0);
   finger5.write(0);
+  irrecv.resume();
   
 }
 
@@ -84,4 +91,5 @@ void Sisscors() {
   finger3.write(90);
   finger4.write(90);
   finger5.write(90);
+  irrecv.resume();
 }
