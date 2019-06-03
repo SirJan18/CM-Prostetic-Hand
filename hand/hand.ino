@@ -27,6 +27,8 @@ void setup() {
   irrecv.enableIRIn(); 
 }
 
+
+
 void loop() {
 
 //If button 1 is pressed then exeute the Rock Paper Sisscors Commands.
@@ -36,8 +38,6 @@ if(results = ) {
 
 
   
-
- 
 
 }
 
