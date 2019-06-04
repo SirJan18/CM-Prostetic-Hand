@@ -1,7 +1,7 @@
 #include <IRremote.h>
 
 
-int RECV_PIN = 11;
+int RECV_PIN = 13;
 IRrecv irrecv(RECV_PIN);
 decode_results results;
 

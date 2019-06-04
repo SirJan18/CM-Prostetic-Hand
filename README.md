@@ -1,4 +1,4 @@
-# BrainCo_CM_Edition
+# CM-Prostetic-HAND
 
 ## Instalation
 Simply download the zip file to the computer and unzip it. 

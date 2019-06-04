@@ -2,7 +2,7 @@
 #include <IRremote.h>
 
 
-IRrecv irrecv(8);
+IRrecv irrecv(13);
 decode_results results;
 Servo finger1;
 Servo finger2;
@@ -30,14 +30,11 @@ void setup() {
 
 
 void loop() {
+ 
+if(results=25AE7EE0) {
 
-//If button 1 is pressed then exeute the Rock Paper Sisscors Commands.
-if(results = ) {
-  rps();  
+  Serial.print(Enter)
 }
-
-
-  
 
 }
 
